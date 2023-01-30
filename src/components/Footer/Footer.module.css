@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1330px) {
+  .footer {
+    display: none;
+  }
+}
+
 .footer a {
   color: inherit;
 }

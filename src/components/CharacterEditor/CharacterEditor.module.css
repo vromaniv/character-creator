@@ -25,11 +25,12 @@
 }
 
 .characterWrapper {
-  position: absolute;
+  position: fixed;
   top: 10%;
   right: 0;
   bottom: 0;
   min-height: 500px;
+  max-width: 100%;
 }
 
 .controlColumn {
@@ -42,4 +43,19 @@
   position: fixed;
   bottom: 0;
   background: hsl(195deg, 20%, 86%);
+}
+
+@media screen and (max-width: 1330px) {
+  .header,
+  .perspective {
+    display: none;
+  }
+
+  .controlColumn {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 100px;
+    overflow-x: auto;
+  }
 }
